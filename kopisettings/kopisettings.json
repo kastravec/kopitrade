@@ -1,0 +1,15 @@
+{
+    "splashscreen_timeout": 1200,
+    "linux": {
+        "styles_path": "/home/petref/mystuff/projects/kopi/kopi/stylethemes",
+        "graphics_assets_path": "/home/petref/mystuff/projects/kopi/kopi/graphic-assets"
+    },
+    "windows": {
+        "styles_path": "/home/petref/mystuff/projects/kopi/kopi/stylethemes",
+        "graphics_assets_path": "/home/petref/mystuff/projects/kopitrade/kopi/kopi/graphic-assets"
+    },
+    "mac": {
+        "styles_path": "/Users/psaraci/mystuff/projects/kopi/kopi/stylethemes",
+        "graphics_assets_path": "/Users/psaraci/mystuff/projects/kopi/kopi/graphic-assets"
+    }
+}

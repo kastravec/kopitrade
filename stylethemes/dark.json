@@ -1,0 +1,105 @@
+{
+    "name": "Simple Dark Theme Template",
+    "kpalette": {
+        "alternateBase": "#322f2f",
+        "base": "#322f2f",
+        "brightText": "#FF9500",
+        "button": "#303030",
+        "buttonText": "#FFFFC0",
+        "dark": "#1F1F1F",
+        "highlight": "#FF9500",
+        "highlightedText": "#FF9500",
+        "light": "#454545",
+        "link": "#FEFBF5",
+        "linkVisited": "#FEFBF5",
+        "mid": "#454545",
+        "midlight": "#454545",
+        "shadow": "#454545",
+        "text": "#80FFFF",
+        "baseText": "#b9ae88",
+        "toolTipBase": "#454545",
+        "toolTipText": "#FEFBF5",
+        "window": "#363330",
+        "windowText": "#FEFBF5",
+        "borderBaseColor": "#004763",
+        "alternateBorderColor": "#D14000",
+        "selectedTabBackgroundColor": "#293237"
+    },
+    "screen": {
+        "background": {
+            "color": "palette.window"
+        },
+        "border": {
+            "color": "#c9dbdd"
+        },
+        "fonts": {
+            "color": "",
+            "size:": ""
+        }
+    },
+    "kframe": {
+        "background": {
+            "color": ""
+        },
+        "border": {
+            "color": "",
+            "size": "",
+            "angle": ""
+        }
+    },
+    "kbutton": {
+        "background": {
+            "color": "",
+            "radius": "15",
+            "border": {
+                "width": "",
+                "color": ""
+            }
+        },
+        "highlight": {
+
+        }
+    },
+    "kview": {
+        "control": {
+            "background": {
+                "color": "#c9dbdd",
+                "image": "i"
+            },
+            "border": {
+                "color": "r",
+                "size": "f",
+                "angle": "d"
+            },
+            "fonts": {
+                "family": "f",
+                "size": "d",
+                "color": "f"
+            }
+        }
+    },
+    "kspecs": {
+        "enabled": "true",
+        "mainMenu": {
+            "border": {
+                "width": "1",
+                "color": ""
+            },
+            "mainBox": {
+                "background": {
+                    "color": "#1F1F1F"
+                },
+                "border": {
+                    "color": "dd",
+                    "size": "e",
+                    "angle": "f"
+                }
+            },
+            "kopiBox": {
+                "background": {
+                    "color": "#c9dbdd"
+                }
+            }
+        }
+    }
+}

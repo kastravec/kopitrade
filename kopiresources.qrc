@@ -1,0 +1,85 @@
+<RCC>
+    <qresource prefix="/">
+        <file>scripts/test.js</file>
+        <file>qtquickcontrols2.conf</file>
+        <file>kopiapp/ui/qml/basickontrols/KTextField.qml</file>
+        <file>kopiapp/ui/qml/kviews/KWebView.qml</file>
+        <file>kopiapp/ui/qml/kviews/PortfolioListView.qml</file>
+        <file>kopiapp/ui/qml/mainscreens/MarketScreen.qml</file>
+        <file>kopiapp/ui/qml/mainscreens/PortfoliosScreen.qml</file>
+        <file>kopiapp/ui/qml/mainscreens/DashboardScreen.qml</file>
+        <file>kopiapp/ui/qml/kviews/MainMenuView.qml</file>
+        <file>kopiapp/ui/qml/core/main.qml</file>
+        <file>kopiapp/ui/qml/core/MainApplicationWindow.qml</file>
+        <file>kopiapp/ui/qml/mainscreens/KSplashScreen.qml</file>
+        <file>kopiapp/ui/qml/basickontrols/KButton.qml</file>
+        <file>kopiapp/ui/qml/basickontrols/KStackView.qml</file>
+        <file>kopiapp/ui/qml/basickontrols/KSpacerItem.qml</file>
+        <file>kopiapp/ui/qml/basickontrols/KLoader.qml</file>
+        <file>kopiapp/ui/qml/basickontrols/KDialog.qml</file>
+        <file>kopiapp/ui/qml/basickontrols/KFrame.qml</file>
+        <file>kopiapp/ui/qml/basickontrols/KopiTradeLogo.qml</file>
+        <file>kopiapp/ui/qml/basickontrols/KRoundButton.qml</file>
+        <file>kopiapp/ui/qml/basickontrols/KLabel.qml</file>
+        <file>kopiapp/ui/qml/basickontrols/KBusyIndicator.qml</file>
+        <file>kopiapp/ui/qml/basickontrols/KMenu.qml</file>
+        <file>kopiapp/ui/qml/basickontrols/KMenuItem.qml</file>
+        <file>kopiapp/ui/qml/basickontrols/KRectangle.qml</file>
+        <file>kopiapp/ui/qml/basickontrols/KTabButton.qml</file>
+        <file>kopiapp/ui/qml/basickontrols/KTabBar.qml</file>
+        <file>kopiapp/ui/qml/basickontrols/KToolBar.qml</file>
+        <file>kopiapp/ui/qml/basickontrols/KToolButton.qml</file>
+        <file>kopisettings/kopisettings.json</file>
+        <file>stylethemes/dark.json</file>
+        <file>graphic-assets/logos/Black logo - no background.png</file>
+        <file>graphic-assets/logos/Color logo - no background.png</file>
+        <file>graphic-assets/logos/Color logo with background.png</file>
+        <file>graphic-assets/logos/White logo - no background.png</file>
+        <file>kopiapp/ui/qml/kviews/PortfolioListViewDelegate.qml</file>
+        <file>kopiapp/ui/qml/mainscreens/UserLoginScreen.qml</file>
+        <file>kopiapp/ui/qml/kviews/SymbolSearchView.qml</file>
+        <file>kopiapp/ui/qml/kviews/KMainToolbar.qml</file>
+        <file>kopiapp/ui/qml/kviews/SymbolListView.qml</file>
+        <file>kopiapp/ui/qml/basickontrols/KCheckBox.qml</file>
+        <file>kopiapp/ui/qml/kviews/ChartView.qml</file>
+        <file>kopiapp/ui/qml/kviews/WatchlistView.qml</file>
+        <file>kopiapp/ui/qml/kviews/KImageViewer.qml</file>
+        <file>kopiapp/ui/qml/kviews/WatchListsViewDelegate.qml</file>
+        <file>kopiapp/ui/qml/mainscreens/NotificationsScreen.qml</file>
+        <file>kopiapp/ui/qml/mainscreens/NotesScreen.qml</file>
+        <file>kopiapp/ui/qml/basickontrols/KImageButton.qml</file>
+        <file>kopiapp/ui/qml/basickontrols/KLine.qml</file>
+        <file>kopiapp/ui/qml/mainscreens/MarketsScreenForm.qml</file>
+        <file>kopiapp/ui/qml/kviews/ChartViewForm.qml</file>
+        <file>kopiapp/ui/qml/kviews/SymbolDataView.qml</file>
+        <file>kopiapp/ui/qml/kviews/SymbolDetailslView.qml</file>
+        <file>kopiapp/ui/qml/kviews/SymbolTradePanelForm.qml</file>
+        <file>kopiapp/ui/qml/kviews/SymbolTradePanel.qml</file>
+        <file>kopiapp/ui/qml/kviews/SymbolListViewForm.qml</file>
+        <file>kopiapp/ui/qml/kviews/WatchlistViewForm.qml</file>
+        <file>kopiapp/ui/qml/kviews/SymbolListViewDelegate.qml</file>
+        <file>kopiapp/ui/qml/kviews/PortfolioListViewForm.qml</file>
+        <file>kopiapp/ui/qml/kviews/PortfolioDashboard.qml</file>
+        <file>kopiapp/ui/qml/kviews/PortfolioDashboardForm.qml</file>
+        <file>kopiapp/ui/qml/mainscreens/UserLoginScreenForm.qml</file>
+        <file>kopiapp/ui/qml/mainscreens/UserRegistrationScreen.qml</file>
+        <file>kopiapp/ui/qml/mainscreens/UserRegistrationScreenForm.qml</file>
+        <file>kopiapp/ui/qml/kviews/SymbolHighlightsDataView.qml</file>
+        <file>kopiapp/ui/qml/basickontrols/KSymbolLogo.qml</file>
+        <file>kopiapp/ui/qml/basickontrols/KComboBox.qml</file>
+        <file>kopiapp/ui/qml/basickontrols/KItemDelegate.qml</file>
+        <file>kopiapp/ui/qml/kviews/KomingSoonView.qml</file>
+        <file>kopiapp/ui/qml/core/KStyleTheme.qml</file>
+        <file>kopiapp/ui/qml/kviews/SymbolFinancialsView.qml</file>
+        <file>kopiapp/ui/qml/kviews/SymbolAnalysisView.qml</file>
+        <file>kopiapp/ui/qml/kviews/SymbolTechnicalsView.qml</file>
+        <file>kopiapp/ui/qml/kviews/SymbolListViewBasicDelegate.qml</file>
+        <file>kopiapp/ui/qml/basickontrols/DraggableItem.qml</file>
+        <file>kopiapp/ui/qml/basickontrols/DraggableItemDropArea.qml</file>
+        <file>kopiapp/ui/qml/basickontrols/KToolTip.qml</file>
+        <file>kopiapp/ui/qml/basickontrols/KGroupBox.qml</file>
+        <file>kopiapp/ui/qml/mainscreens/WelcomeScreen.qml</file>
+        <file>kopiapp/ui/qml/basickontrols/KJsonObjectListModel.qml</file>
+        <file>graphic-assets/icons/stock_data-512.png</file>
+    </qresource>
+</RCC>

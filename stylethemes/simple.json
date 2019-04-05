@@ -1,0 +1,88 @@
+{
+    "name": "Simple Theme template",
+    "kpalette": {
+        "alternateBase": "#303030",
+        "base": "#303030",
+        "brightText": "#FF9500",
+        "button": "#303030",
+        "buttonText": "#FEFBF5",
+        "dark": "#303030",
+        "highlight": "FF9500",
+        "highlightedText": "FF9500",
+        "light": "#454545",
+        "link": "FEFBF5",
+        "linkVisited" : "FEFBF5",
+        "mid": "454545",
+        "midlight": "454545",
+        "shadow": "454545",
+        "text": "FEFBF5",
+        "toolTipBase": "454545",
+        "toolTipText": "FEFBF5",
+        "window": "#303030",
+        "windowText": "FEFBF5"
+    },
+
+    "screen": {
+        "background": {
+            "color": "palette.window"
+        },
+
+        "border": {
+            "color": "#c9dbdd"
+        },
+
+        "fonts": {
+            "color": "",
+            "size:": ""
+        }
+    },
+
+    "kframe": {
+        "background": {
+            "color": ""
+        },
+        "border": {
+            "color": "",
+            "size": "",
+            "angle": ""
+        }
+    },
+
+    "kview": {
+        "control": {
+            "background": {
+                "color": "#c9dbdd",
+                "image":"i"
+            },
+            "border": {
+                "color": "r",
+                "size": "f",
+                "angle": "d"
+            },
+            "fonts": {
+                "family": "f",
+                "size": "d",
+                "color":"f"
+            }
+        }
+    },
+
+    "kspecs": {
+        "enabled": "true",
+        "mainMenu": {
+            "mainBox": {
+                "background": {
+                    "color": "#c9dbdd"
+                },
+                "border": {
+                    "color": "dd",
+                    "size": "e",
+                    "angle": "f"
+                }
+            },
+            "kopiBox": {
+                "background": {"color": "#c9dbdd" }
+            }
+        }
+    }
+}
