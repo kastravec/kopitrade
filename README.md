@@ -1,6 +1,8 @@
 # kopitrade
 Explore and track stocks, see charts and information based on the IEX service
 
+![Alt text](/screenshot1.png?raw=true "Kopi screenshot")
+
 ## How to use it?
 
 ## Requirements
@@ -22,3 +24,5 @@ The json file should look like this:
 ## How to run it
 ### 1. Clone repo 
 ### 2. Launch QtCreator - Open project kopi.pro - build and run
+
+![Alt text](/screenshot2.png?raw=true "Kopi screenshot 2")
