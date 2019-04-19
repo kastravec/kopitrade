@@ -12,8 +12,7 @@ ChartViewForm {
     signal oneChartView
     signal twoChartView
 
-    property int delegateWidth: root.width * 0.99
-    property int delegateHeight: root.height * 0.94
+    property int chartViewType: 1
     property string currentSymbol
     property KSymbol ksymbol
 
@@ -66,7 +65,7 @@ ChartViewForm {
     }
 
     Component.onCompleted: {
-        chartTypeCombo.currentIndex = 1
+        chartTypeCombo.currentIndex = root.chartViewType
         chartOne.widgetType = HtmlWidget.SimpleChart
     }
 
@@ -79,24 +78,11 @@ ChartViewForm {
         onPriceChanged: root.priceLabel.text = ksymbol.price
     }
 
-    //handling the save and cancel button actions of the snapDialog
-//    cancelSnapButton.onClicked: snapDialog.close()
-
     chartTypeCombo.onActivated: {
         chartTypeChanged(chartTypeCombo.currentIndex)
     }
 
-//    imageSnapButton.icon {
-//        name: "camera"
-//        source: "qrc:/graphic-assets/icons/camera.png"
-//    }
-
-//    imageSnapButton.onClicked: {
-//        chartGridView.webview.grabToImage(function (result) {
-//            root.imageViewer.image.source = result.url
-////            result.saveToFile("something.png")
-//        })
-//    }
+    onChartViewTypeChanged: chartTypeChanged(root.chartViewType)
 
     //html code widget one - the default one
     HtmlWidget {
@@ -122,7 +108,6 @@ ChartViewForm {
     function symbolChangedRefresh() {
         root.ksymbol = IEXSymbolsModel.symbol(root.currentSymbol)
         if(root.ksymbol) {
-            root.priceLabel.text = root.ksymbol.price
             chartOne.assetSymbol = root.currentSymbol
             chartGridView.webview.loadHtml(chartOne.tradingviewWidget(),
                                            "http://kopitrade.io")
@@ -130,11 +115,9 @@ ChartViewForm {
     }
 
     function chartTypeChanged(index) {
-
-        switch (chartTypeCombo.currentIndex) {
+        switch (index) {
         case 0:
             chartOne.widgetType = HtmlWidget.BasicChart
-            root.coverFrame.visible = false
             chartOne.widgetProperties = root.basicChartJS
             chartOne.beginBodyWidget = "<div class=\"tradingview-widget-container\">"
                     + "\n<div id=\"" + chartOne.containerID + "\"> </div>"
@@ -142,7 +125,6 @@ ChartViewForm {
             break
         case 1:
             chartOne.widgetType = HtmlWidget.SimpleChart
-            root.coverFrame.visible = false
             chartOne.widgetProperties = root.simpleChartJS
             chartOne.beginBodyWidget = "<div class=\"tradingview-widget-container\">"
                     + "\n<div id=\"" + chartOne.containerID + "\"> </div>"
@@ -151,7 +133,6 @@ ChartViewForm {
             break
         case 2:
             chartOne.widgetType = HtmlWidget.AdvancedChart
-            root.coverFrame.visible = false
             chartOne.widgetProperties = root.advancedChartJS
             chartOne.beginBodyWidget = "<div class=\"tradingview-widget-container\">"
                     + "\n<div id=\"" + chartOne.containerID + "\"> </div>"
@@ -163,6 +144,5 @@ ChartViewForm {
         chartOne.assetSymbol = root.currentSymbol
         chartGridView.webview.loadHtml(chartOne.tradingviewWidget(),
                                        "http://kopitrade.io")
-
     }
 }

@@ -16,14 +16,8 @@ Item {
     property alias sizeOneButton: sizeOneButton
 
     property alias chartToolbarBox: chartToolbarBox
-//    property alias cancelSnapButton: cancelSnapButton
-//    property alias saveSnapButton: saveSnapButton
-//    property alias imageViewer: imageviewer
     property alias chartGridView: chartGridView
     property alias chartTypeCombo: chartTypeCombo
-
-    property alias priceLabel: priceLabel
-    property alias coverFrame: coverFrame
 
     ColumnLayout {
         spacing: 1
@@ -43,14 +37,6 @@ Item {
                 anchors.bottom: parent.bottom
                 anchors.top: parent.top
                 spacing: 4
-
-//                KImageButton {
-//                    id: imageSnapButton
-//                    Layout.alignment: Qt.AlignRight | Qt.AlignBottom
-//                    Layout.maximumHeight: 24
-//                    Layout.minimumHeight: 24
-//                    Layout.minimumWidth: 30
-//                }
 
                 KButton {
                     id: chartPopupButton
@@ -128,25 +114,6 @@ Item {
             statusBar.visible: false
             Layout.fillHeight: true
             Layout.fillWidth: true
-        }
-    }
-
-
-    KRectangle {
-        id: coverFrame
-        width: 300
-        height: 70
-        x: chartGridView.x + 20
-        y: chartGridView.y + 20
-        color: KStyle.styleDefinition.kpalette.window
-
-        KLabel {
-            id: priceLabel
-            font.pointSize: 24
-            font.bold: true
-            verticalAlignment: Text.AlignVCenter
-            horizontalAlignment: Text.AlignLeft
-            anchors.fill: parent
         }
     }
 }

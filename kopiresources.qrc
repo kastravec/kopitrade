@@ -81,5 +81,6 @@
         <file>kopiapp/ui/qml/mainscreens/WelcomeScreen.qml</file>
         <file>kopiapp/ui/qml/basickontrols/KJsonObjectListModel.qml</file>
         <file>graphic-assets/icons/stock_data-512.png</file>
+        <file>kopiapp/ui/qml/mainscreens/ChartModeScreen.qml</file>
     </qresource>
 </RCC>

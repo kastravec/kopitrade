@@ -124,6 +124,7 @@ void KSymbol::setSymbol(const QString &symbol)
 QString KSymbol::symbolName() const
 {
     return m_data->jsonData.value(KSymbolProperty::Symbol_Name).toString();
+    return m_data->jsonData.value(KSymbolProperty::Symbol).toString();
 }
 
 QJsonObject KSymbol::jsonData() const

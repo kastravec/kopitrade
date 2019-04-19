@@ -9,10 +9,14 @@ KToolBar {
     id: root
 
     property alias mainMenuButton: mainMenuButton
-//    property alias portfolioButton: portfolioButton
-//    property alias marketButton: marketButton
-//    property alias notesButton: notesButton
-//    property alias notificationsButton: notificationsButton
+    property alias chartModeButton: chartModeButton
+    property alias marketButton: marketButton
+    property alias chartTypeCombo: chartTypeCombo
+
+    property bool showChartsModeButtons: false
+    property alias b2: b2
+    property alias b4: b4
+    property alias b8: b8
 
     RowLayout {
         anchors.leftMargin: 5
@@ -29,52 +33,98 @@ KToolBar {
             checkable: false
         }
 
-        KSpacerItem {
-            Layout.minimumWidth: 40
-            Layout.maximumWidth: 40
-            Layout.fillHeight: true
-            Layout.fillWidth: true
+        RowLayout {
+            spacing: 3
+
+            KToolButton {
+                id: marketButton
+                text: "Markets"
+                Layout.maximumHeight: 25
+                Layout.fillHeight: true
+            }
+
+            KToolButton {
+                id: chartModeButton
+                text: "Full Chart Mode"
+                Layout.maximumHeight: 25
+                Layout.fillHeight: true
+            }
         }
 
-//        KFrame {
-//            id: buttonbox1
-//            Layout.fillHeight: true
-//            Layout.fillWidth: false
+        RowLayout {
+            id: chartModeButtonLayout
+            visible: root.showChartsModeButtons
 
-//            RowLayout {
-//                spacing: 3
-//                anchors.fill: parent
+            KLabel {
+                id: lb1
+                text: qsTr("How many charts?  ")
+                font.pointSize: 14
+                font.bold: true
+                font.italic: true
+                color: KStyle.styleDefinition.kpalette.highlight
+            }
 
-//                KToolButton {
-//                    id: marketButton
-//                    text: "Markets"
-//                    Layout.fillHeight: true
-//                }
+            KButton {
+                id: b2
+                text: "2"
+                Layout.minimumWidth: 30
+                font.pointSize: 18
+                font.bold: true
+                checked: true
+            }
 
-//                KToolButton {
-//                    id: portfolioButton
-//                    text: "Portfolio"
-//                    Layout.fillHeight: true
-//                }
+            KButton {
+                id: b4
+                text: "4"
+                Layout.minimumWidth: 30
+                font.bold: true
+                font.pointSize: 18
+            }
 
-//                KToolButton {
-//                    id: notesButton
-//                    text: "Notes"
-//                    Layout.fillHeight: true
-//                }
+            KButton {
+                id: b8
+                text: "8"
+                font.bold: true
+                Layout.minimumWidth: 30
+                font.pointSize: 18
+            }
 
-//                KToolButton {
-//                    id: notificationsButton
-//                    text: "Notifications"
-//                    Layout.fillHeight: true
-//                }
-//            }
-//        }
+            KLabel {
+                id: lb2
+                text: qsTr("Chart type?  ")
+                font.pointSize: 14
+                font.bold: true
+                font.italic: true
+                color: KStyle.styleDefinition.kpalette.highlight
+            }
+
+            KComboBox {
+                id: chartTypeCombo
+                model: chartTypeModel
+                Layout.alignment: Qt.AlignRight | Qt.AlignTop
+                Layout.maximumHeight: 24
+                Layout.minimumHeight: 24
+                Layout.minimumWidth: 30
+                currentIndex: 2
+                delegate: KItemDelegate {
+                          width: chartTypeCombo.width
+                          text: modelData
+                          highlighted: chartTypeCombo.highlightedIndex === index
+                      }
+
+                ListModel {
+                    id: chartTypeModel
+                    ListElement { type: qsTr("Basic") }
+                    ListElement { type: qsTr("Simple") }
+                    ListElement { type: qsTr("Advanced") }
+                }
+            }
+        }
+
     }
 }
 
 /*##^## Designer {
-    D{i:0;height:50;width:1000}
+    D{i:0;height:30;width:1000}
 }
  ##^##*/
-

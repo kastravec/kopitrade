@@ -22,12 +22,27 @@ ApplicationWindow {
 
     header: KMainToolbar {
         id: maintoolbar
+        height: 35
         enabled: true
 
+        showChartsModeButtons: chartsModeLoader.item.visible
         mainMenuButton.onClicked: mainMenuDrawer.open()
-    }
 
-    onClosing: {}
+        chartModeButton.onClicked: {
+            mainStackView.pop()
+            mainStackView.push(chartsModeLoader.item)
+        }
+
+        marketButton.onClicked: {
+            mainStackView.pop()
+            mainStackView.push(marketScreenLoader.item)
+        }
+
+        b2.onClicked: chartsModeLoader.item.numberOfCharts = 2
+        b4.onClicked: chartsModeLoader.item.numberOfCharts = 4
+        b8.onClicked: chartsModeLoader.item.numberOfCharts = 8
+        chartTypeCombo.onActivated: chartsModeLoader.item.chartViewType = chartTypeCombo.currentIndex
+    }
 
     SystemTrayIcon {
         visible: true
@@ -65,6 +80,12 @@ ApplicationWindow {
                 source: "../mainscreens/MarketScreen.qml"
                 active: true
                 onLoaded: mainStackView.push(marketScreenLoader.item)
+            }
+
+            KLoader {
+                id: chartsModeLoader
+                source: "../mainscreens/ChartModeScreen.qml"
+                active: true
             }
         }
     }

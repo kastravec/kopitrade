@@ -5,7 +5,7 @@ import Kopi 1.0
 
 ItemDelegate {
     id: root
-    text: qsTr("ItemDelegate")
+    text: qsTr("item")
 
     property string backgroundBoderColor: KStyle.styleDefinition.kpalette.borderBaseColor
     property string backgroundBorderHighlightColor: KStyle.styleDefinition.kpalette.highlight
